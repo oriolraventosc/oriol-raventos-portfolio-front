@@ -1,70 +1,117 @@
-# Getting Started with Create React App
+# Data layer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Data:
 
-## Available Scripts
+- Project {name: string, url: strig, picture: string}
 
-In the project directory, you can run:
+# Components
 
-### `npm start`
+## Header
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Show data:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Span element with the text {oriol raventós}
+- Navigation component
 
-### `npm test`
+### Get actions:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- When clicked on the span element it should bring the user to the top of the page
+- When clicked on the navigation items it should bring the user to the sections: about me, technologies, projects or contact
 
-### `npm run build`
+## Navigation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Show data:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Link with the text about me
+- Link with the text technologies
+- Link with the text projects
+- Link with the text contact
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Get actions:
 
-### `npm run eject`
+- When clicked on the navigation items it should bring the user to the sections: about me, technologies, projects or contact
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Hero
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Show data:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Span element with the text Hello.
+- H1 element with the text I am oriol raventós
+- H2 element with the text Front End Developer
+- Button with the text Let's get in touch
+- Icon with a down-arrow
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Get actions:
 
-## Learn More
+- When clicked on the button it should bring the user to the contact section
+- When clicked on the icon it should bring the user to the about me section
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## About
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Show data:
 
-### Code Splitting
+- H2 element with the text about me
+- Paragraph with a description
+- Image element with an alt text Oriol Raventós Front End Developer
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Get actions:
 
-### Analyzing the Bundle Size
+- When clicked on the image it should reddirect the user to a linkedin profile
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Technologies
 
-### Making a Progressive Web App
+### Show data:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- H2 element with the text technologies
+- Span element with the text USING NOW:
+- Span elememt with the text LEARNING:
+- Grid with icons
+- H3 with the name of the icon technology, library or framework
 
-### Advanced Configuration
+### Get actions:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- When clicked on the icons it should reddirect the user to the documentation of the technology, library or framework
 
-### Deployment
+## Projects
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Show data:
 
-### `npm run build` fails to minify
+- H2 element with the text projects
+- List of projects
+- H2 with the text of the project name
+- Button with the text Vew source code
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Get actions:
+
+- When clicked on the project it should reddirect the user to the production app url
+- When clicked on the button view source code it should reddirect the user to the github project
+
+## Contact
+
+### Show data:
+
+- Input type text with a placeholder Name
+- Input type email with a placeholder Email
+- Input type number with a placeholder Telephone
+- Input type paragraph with a placeholder Write your message
+- Button with the text SUBMIT
+
+### Get actions:
+
+- When submited the form it should show a success modal with the text Your message has been sent
+
+## Footer
+
+### Show data:
+
+- Span element with the text created by oriol raventós
+- Github icon
+- Instagram icon
+- Facebook icon
+- Twitter icon
+- Linkedin icon
+- Mail icon
+
+### Get actions:
+
+- When clicked on the icons it should reddirect the user to the pages url
