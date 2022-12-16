@@ -13,8 +13,7 @@ const AboutStyled = styled.section`
   }
   img {
     width: 250px;
-    height: 350px;
-    opacity: 0.7;
+    height: 250px;
     border-radius: 5px;
   }
   .about {
@@ -55,7 +54,7 @@ const AboutStyled = styled.section`
     padding-top: 5rem;
     img {
       width: 350px;
-      height: 450px;
+      height: 350px;
       border-radius: 5px;
     }
     .about {
@@ -100,7 +99,7 @@ const AboutStyled = styled.section`
     padding-top: 5rem;
     flex-direction: row;
     img {
-      width: 300px;
+      width: 400px;
       height: 400px;
     }
     .about {
@@ -122,6 +121,7 @@ const AboutStyled = styled.section`
         color: ${MainTheme.colors.mainWhite};
         font-size: 1.1rem;
         text-align: left;
+        max-width: fit-content;
       }
       &__content-main {
         display: inline-block;
