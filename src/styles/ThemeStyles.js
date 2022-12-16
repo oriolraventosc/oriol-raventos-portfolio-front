@@ -4,7 +4,7 @@ const MainTheme = {
     mainGreen: "#ACE50A",
     mainWhite: "#fff",
   },
-  borderRadius: "15px",
+  borderRadius: "5px",
 };
 
 export default MainTheme;

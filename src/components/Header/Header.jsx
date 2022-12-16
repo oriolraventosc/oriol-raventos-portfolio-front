@@ -20,14 +20,18 @@ const Header = () => {
           >
             <span className="header-mobile__title">{"{ or }"}</span>
           </a>
-          <Hamburger
-            aria-label="toggle-menu"
-            direction="left"
-            size={24}
-            color="#fff"
-            duration={0.1}
-            onToggle={() => toggleMenu()}
-          />
+          <div className="hamburger">
+            <Hamburger
+              rounded
+              left="40px"
+              aria-label="toggle-menu"
+              direction="left"
+              size={20}
+              color="#fff"
+              duration={0.1}
+              onToggle={() => toggleMenu()}
+            />
+          </div>
         </div>
         <div className={mainMenuButtonClassName} aria-label="portfolio-menu">
           <a
