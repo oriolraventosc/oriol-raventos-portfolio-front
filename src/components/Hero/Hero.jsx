@@ -19,12 +19,14 @@ const Hero = () => {
         </div>
       </HeroStyled>
       <div className="next-button">
-        <ExpandCircleDownIcon
-          className="next-button-icon"
-          sx={{
-            fontSize: "3rem",
-          }}
-        />
+        <a href="#about me">
+          <ExpandCircleDownIcon
+            className="next-button-icon"
+            sx={{
+              fontSize: "3rem",
+            }}
+          />
+        </a>
       </div>
     </>
   );

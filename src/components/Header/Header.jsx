@@ -7,6 +7,7 @@ const Header = () => {
   const toggleMenu = () => {
     setOpen(!isOpen);
   };
+
   const mainMenuButtonClassName = isOpen
     ? "header-mobile-navigation--show"
     : "header-mobile-navigation";
@@ -34,10 +35,7 @@ const Header = () => {
           </div>
         </div>
         <div className={mainMenuButtonClassName} aria-label="portfolio-menu">
-          <a
-            href="https://www.google.es"
-            className="header-mobile__navigation__item"
-          >
+          <a href="#about me" className="header-mobile__navigation__item">
             about me
           </a>
           <a
@@ -71,10 +69,7 @@ const Header = () => {
           className="header-desktop__navigation"
           aria-label="portfolio-desktop-menu"
         >
-          <a
-            href="https://www.google.es"
-            className="header-desktop__navigation__item"
-          >
+          <a href="#about me" className="header-desktop__navigation__item">
             about me
           </a>
           <a
