@@ -3,6 +3,10 @@ import "@fontsource/roboto";
 import MainTheme from "./ThemeStyles";
 
 const GlobalStyles = createGlobalStyle`
+::selection {
+  background-color: ${MainTheme.colors.mainGreen};
+  color: ${MainTheme.colors.mainGrey}
+}
 body {
   font-family: "Roboto";
 }
