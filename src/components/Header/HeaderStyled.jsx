@@ -2,6 +2,10 @@ import styled from "styled-components";
 import MainTheme from "../../styles/ThemeStyles";
 
 const HeaderStyled = styled.header`
+  .hamburger {
+    position: relative;
+    left: 14px;
+  }
   .header-desktop {
     display: none;
   }
@@ -10,7 +14,6 @@ const HeaderStyled = styled.header`
     display: none;
   }
   .header-mobile {
-    padding-left: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;

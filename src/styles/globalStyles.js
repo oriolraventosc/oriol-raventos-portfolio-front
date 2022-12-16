@@ -24,8 +24,8 @@ body {
   padding-right: 1rem;
   padding-left: 1rem;
   @media (min-width: 426px) {
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
   }
   @media (min-width: 800px) {
   padding-right: 3rem;
@@ -37,6 +37,19 @@ ul {
 }
 li {
   list-style: none;
+}
+.next-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.next-button-icon {
+  color: #ACE50A;
+}
+.next-button-icon:hover {
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
 }
 `;
 
