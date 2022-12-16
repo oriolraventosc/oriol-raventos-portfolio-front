@@ -81,7 +81,7 @@ const Technologies = () => {
       </div>
       <span
         className="learning-technologies__title"
-        aria-label="technologies learning"
+        aria-label="new technologies learning"
       >
         LEARNING:
       </span>

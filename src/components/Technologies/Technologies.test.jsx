@@ -21,7 +21,7 @@ describe("Given a Technologies component", () => {
       expect(expectedTitle).toBeInTheDocument();
     });
 
-    describe("Then it should show a text 'USING NOW:'", () => {
+    test("Then it should show a text 'USING NOW:'", () => {
       render(
         <ThemeProvider theme={MainTheme}>
           <GlobalStyles />
@@ -34,7 +34,7 @@ describe("Given a Technologies component", () => {
       expect(expectedText).toBeInTheDocument();
     });
 
-    describe("Then it should show a text 'LEARNING:'", () => {
+    test("Then it should show a text 'LEARNING:'", () => {
       render(
         <ThemeProvider theme={MainTheme}>
           <GlobalStyles />
@@ -42,7 +42,7 @@ describe("Given a Technologies component", () => {
         </ThemeProvider>
       );
 
-      const expectedText = screen.queryByLabelText("technologies learning");
+      const expectedText = screen.queryByLabelText("new technologies learning");
 
       expect(expectedText).toBeInTheDocument();
     });
