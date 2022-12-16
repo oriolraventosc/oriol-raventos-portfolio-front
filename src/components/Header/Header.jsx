@@ -7,6 +7,9 @@ const Header = () => {
   const toggleMenu = () => {
     setOpen(!isOpen);
   };
+  const closeMenu = () => {
+    setOpen(false);
+  };
 
   const mainMenuButtonClassName = isOpen
     ? "header-mobile-navigation--show"
@@ -18,11 +21,13 @@ const Header = () => {
           <a
             href="https://www.google.es"
             aria-label="oriol-raventos-portfolio-top"
+            onClick={closeMenu}
           >
             <span className="header-mobile__title">{"{ or }"}</span>
           </a>
           <div className="hamburger">
             <Hamburger
+              toggled={isOpen}
               rounded
               left="40px"
               aria-label="toggle-menu"
@@ -35,24 +40,31 @@ const Header = () => {
           </div>
         </div>
         <div className={mainMenuButtonClassName} aria-label="portfolio-menu">
-          <a href="#about me" className="header-mobile__navigation__item">
+          <a
+            href="#about me"
+            className="header-mobile__navigation__item"
+            onClick={closeMenu}
+          >
             about me
           </a>
           <a
             href="https://www.google.es"
             className="header-mobile__navigation__item"
+            onClick={closeMenu}
           >
             technologies
           </a>
           <a
             href="https://www.google.es"
             className="header-mobile__navigation__item"
+            onClick={closeMenu}
           >
             projects
           </a>
           <a
             href="https://www.google.es"
             className="header-mobile__navigation__item"
+            onClick={closeMenu}
           >
             contact
           </a>
