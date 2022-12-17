@@ -74,9 +74,9 @@ describe("Given a About component", () => {
         </ThemeProvider>
       );
 
-      const expectedImage = screen.queryByRole("img", {
-        name: "oriol raventós Front End Developer",
-      });
+      const expectedImage = screen.queryByLabelText(
+        "oriol raventós profile picture"
+      );
 
       expect(expectedImage).toBeInTheDocument();
     });

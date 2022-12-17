@@ -7,10 +7,7 @@ const HeroStyled = styled.section`
   align-items: center;
   height: 300px;
   @media (min-width: 426px) {
-    height: 400px;
-  }
-  @media (min-width: 800px) {
-    height: 450px;
+    height: calc(100vh - 80px);
   }
   .hero {
     display: flex;
@@ -21,17 +18,15 @@ const HeroStyled = styled.section`
     span,
     h1 {
       color: ${MainTheme.colors.mainWhite};
-      font-size: 1.5rem;
       font-weight: 800;
+      font-size: clamp(1.56rem, calc(1.27rem + 1.43vw), 3.55rem);
+      margin: 0;
       @media (min-width: 426px) {
-        font-size: 2rem;
+        font-size: clamp(2.07rem, calc(1.69rem + 1.9vw), 4.74rem);
       }
       @media (min-width: 800px) {
-        font-size: 2.5rem;
+        font-size: clamp(2.76rem, calc(2.26rem + 2.54vw), 6.31rem);
       }
-    }
-    h1 {
-      color: ${MainTheme.colors.mainGreen};
     }
     &__typed-out {
       padding-top: 5px;
@@ -41,13 +36,6 @@ const HeroStyled = styled.section`
     }
     &__typed-out p {
       color: ${MainTheme.colors.mainWhite};
-      font-size: 1.5rem;
-      @media (min-width: 426px) {
-        font-size: 2rem;
-      }
-      @media (min-width: 800px) {
-        font-size: 2.5rem;
-      }
       width: 0;
       max-width: max-content;
       overflow: hidden;
@@ -68,7 +56,7 @@ const HeroStyled = styled.section`
     display: inline-block;
   }
   p,
-  h1 {
+  h3 {
     margin: 0;
   }
 
@@ -101,17 +89,16 @@ const HeroStyled = styled.section`
     background-color: ${MainTheme.colors.mainGrey};
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
-    font-size: 0.8rem;
     font-weight: lighter;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     @media (min-width: 426px) {
-      font-size: 1rem;
       padding-left: 2.5rem;
       padding-right: 2.5rem;
     }
     @media (min-width: 800px) {
-      font-size: 1.2rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
       padding-left: 2.5rem;
       padding-right: 2.5rem;
     }

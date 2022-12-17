@@ -3,8 +3,8 @@ import TechnologiesStyled from "./TechnologiesStyled";
 const Technologies = () => {
   return (
     <TechnologiesStyled>
-      <h2>technologies</h2>
-      <span aria-label="technologies in use">USING NOW:</span>
+      <h3>technologies</h3>
+      <h5>USING NOW:</h5>
       <div className="technologies__in-use__list">
         <div className="technologies__list__item">
           <img
@@ -79,12 +79,7 @@ const Technologies = () => {
           <h2>MongoDB</h2>
         </div>
       </div>
-      <span
-        className="learning-technologies__title"
-        aria-label="new technologies learning"
-      >
-        LEARNING:
-      </span>
+      <h5 className="learning-technologies__title">LEARNING:</h5>
       <div className="technologies__in-use__list">
         <div className="technologies__list__item">
           <img
