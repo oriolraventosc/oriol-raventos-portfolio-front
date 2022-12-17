@@ -65,7 +65,7 @@ span {
   }
 }
 button {
-  font-size: var(--step-0);
+  font-size: var(--step-1);
   @media (min-width: 426px) {
     font-size: var(--step-0);
   }
