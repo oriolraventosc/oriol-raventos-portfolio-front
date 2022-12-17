@@ -30,6 +30,9 @@ const HeaderStyled = styled.header`
     &__navigation__item {
       padding-bottom: 2rem;
     }
+    &__navigation__item:nth-child(4) {
+      padding-bottom: 0;
+    }
     &__navigation__item:hover {
       color: ${MainTheme.colors.mainGreen};
       transition: 0.3s;
@@ -109,6 +112,9 @@ const HeaderStyled = styled.header`
     justify-content: space-between;
     top: 5px;
     width: calc(100vw - 2rem);
+    padding-top: 1.5%;
+    top: 0;
+    padding-bottom: 1.5%;
   }
 `;
 
