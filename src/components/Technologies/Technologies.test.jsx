@@ -36,21 +36,5 @@ describe("Given a Technologies component", () => {
 
       expect(expectedText).toBeInTheDocument();
     });
-
-    test("Then it should show a text 'LEARNING:'", () => {
-      render(
-        <ThemeProvider theme={MainTheme}>
-          <GlobalStyles />
-          <Technologies />
-        </ThemeProvider>
-      );
-
-      const expectedText = screen.queryByRole("heading", {
-        level: 5,
-        name: "LEARNING:",
-      });
-
-      expect(expectedText).toBeInTheDocument();
-    });
   });
 });

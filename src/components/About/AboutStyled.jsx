@@ -2,10 +2,7 @@ import styled from "styled-components";
 import MainTheme from "../../styles/ThemeStyles";
 
 const AboutStyled = styled.section`
-  padding-top: 5rem;
-  @media (min-width: 800px) {
-    padding-top: 10rem;
-  }
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,7 +47,7 @@ const AboutStyled = styled.section`
     }
   }
   @media (min-width: 426px) {
-    padding-top: 5rem;
+    margin-top: 5rem;
     img {
       width: 350px;
       height: 350px;
@@ -91,7 +88,7 @@ const AboutStyled = styled.section`
     p {
       text-align: left;
     }
-    padding-top: 5rem;
+    margin-top: 10rem;
     flex-direction: row;
     img {
       width: 400px;

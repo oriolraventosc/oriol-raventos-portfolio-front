@@ -7,6 +7,13 @@ const GlobalStyles = createGlobalStyle`
   background-color: ${MainTheme.colors.mainGreen};
   color: ${MainTheme.colors.mainGrey}
 }
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
 strong {
   color: ${MainTheme.colors.mainGreen};
 }
@@ -29,11 +36,11 @@ h2 {
 h3 {
   font-size: var(--step-2);
   @media (min-width: 800px) {
-    font-size: var(--step-3);
+    font-size: var(--step-2);
   }
 }
 h4 {
-  font-size: var(--step-2);
+  font-size: var(--step-0);
 }
 h5 {
   font-size: var(--step-0);
@@ -42,7 +49,7 @@ h6 {
   font-size: var(--step-0);
 }
 p {
-  font-size: var(--step-0);
+  font-size: var(--step-1);
   @media (min-width: 426px) {
 
     font-size: var(--step-0);
