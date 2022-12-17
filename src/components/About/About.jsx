@@ -4,20 +4,20 @@ const About = () => {
   return (
     <AboutStyled id="about me">
       <div className="about">
-        <p className="about__title">
-          about <span className="about__title-main">me</span>
-        </p>
+        <h3 className="about__title">
+          about <strong className="about__title-main">me</strong>
+        </h3>
         <p
           className="about__content"
           aria-label="introduction about oriol raventós"
         >
           My name is oriol raventós and I'm a{" "}
-          <span className="about__content-main">
+          <strong className="about__content-main">
             Junior Front End Developer
-          </span>{" "}
-          based in <span className="about__content-main">Barcelona</span>. I
+          </strong>{" "}
+          based in <strong className="about__content-main">Barcelona</strong>. I
           describe myself as a passionate developer who loves{" "}
-          <span className="about__content-main">coding</span>, creating new
+          <strong className="about__content-main">coding</strong>, creating new
           content for the internet and facing new challenges.
         </p>{" "}
         <br />
@@ -26,8 +26,8 @@ const About = () => {
           aria-label="past proffesional experiences"
         >
           Not so long ago I used to work as a{" "}
-          <span className="about__content-main">SEO Technician</span>, but now I
-          work with code.
+          <strong className="about__content-main">SEO Technician</strong>, but
+          now I work with code.
         </p>
         <br />{" "}
         <p className="about__content" aria-label="free time activities">

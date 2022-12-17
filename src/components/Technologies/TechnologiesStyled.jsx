@@ -7,38 +7,37 @@ const TechnologiesStyled = styled.section`
   justify-content: center;
   align-items: center;
   padding-top: 5rem;
+  @media (min-width: 800px) {
+    padding-top: 10rem;
+  }
   text-align: center;
   @media (min-width: 800px) {
     text-align: center;
   }
-  h2 {
+  h3 {
     margin: 0;
-    font-size: 1.6rem;
+
     color: ${MainTheme.colors.mainGreen};
     font-weight: bold;
     padding-bottom: 1rem;
     text-align: left;
     text-align: center;
     @media (min-width: 426px) {
-      font-size: 1.6rem;
       text-align: center;
     }
     @media (min-width: 800px) {
-      font-size: clamp(2rem, 2vw + 1rem, 3rem);
       text-align: center;
     }
   }
-  span {
-    font-size: 0.9rem;
+  h5 {
+    margin: 0;
     text-align: center;
     font-weight: bold;
     color: ${MainTheme.colors.mainWhite};
     @media (min-width: 426px) {
-      font-size: 0.9rem;
       text-align: center;
     }
     @media (min-width: 800px) {
-      font-size: clamp(1.1rem, 0.8vw + 0.5rem, 2rem);
       text-align: left;
     }
   }

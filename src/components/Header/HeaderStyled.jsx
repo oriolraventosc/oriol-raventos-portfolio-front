@@ -2,7 +2,7 @@ import styled from "styled-components";
 import MainTheme from "../../styles/ThemeStyles";
 
 const HeaderStyled = styled.header`
-  padding-top: 1%;
+  padding-top: 1.5%;
   padding-bottom: 1%;
   .hamburger {
     position: relative;
@@ -22,12 +22,10 @@ const HeaderStyled = styled.header`
     justify-content: space-between;
     &__title {
       color: ${MainTheme.colors.mainGreen};
-      font-size: clamp(1.5rem, 4vw + 1rem, 1.6rem);
       font-weight: bold;
     }
     &__navigation__item {
       padding-bottom: 2rem;
-      font-size: 1.3rem;
     }
     &__navigation__item:hover {
       color: ${MainTheme.colors.mainGreen};
@@ -74,7 +72,6 @@ const HeaderStyled = styled.header`
       justify-content: space-between;
       &__title {
         color: ${MainTheme.colors.mainGreen};
-        font-size: clamp(1.6rem, 2vw + 1rem, 3.5rem);
         font-weight: bold;
       }
       &__title:hover {

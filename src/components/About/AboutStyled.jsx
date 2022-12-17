@@ -3,6 +3,9 @@ import MainTheme from "../../styles/ThemeStyles";
 
 const AboutStyled = styled.section`
   padding-top: 5rem;
+  @media (min-width: 800px) {
+    padding-top: 10rem;
+  }
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,7 +21,6 @@ const AboutStyled = styled.section`
   }
   .about {
     &__title {
-      font-size: clamp(1.5rem, 4vw + 1rem, 1.5rem);
       margin: 0;
       color: ${MainTheme.colors.mainWhite};
       font-weight: bold;
@@ -26,14 +28,12 @@ const AboutStyled = styled.section`
       text-align: center;
     }
     &__title-main {
-      font-size: clamp(1.5rem, 4vw + 1rem, 1.5rem);
       margin: 0;
       color: ${MainTheme.colors.mainGreen};
       font-weight: bold;
     }
     &__content {
       color: ${MainTheme.colors.mainWhite};
-      font-size: 0.9rem;
       text-align: center;
       max-width: 400px;
     }
@@ -41,7 +41,6 @@ const AboutStyled = styled.section`
       display: inline-block;
       color: ${MainTheme.colors.mainGreen};
       margin: 0;
-      font-size: 0.9rem;
     }
     &__image {
       background-color: ${MainTheme.colors.mainGreen};
@@ -59,7 +58,6 @@ const AboutStyled = styled.section`
     }
     .about {
       &__title {
-        font-size: 1.6rem;
         margin: 0;
         color: ${MainTheme.colors.mainWhite};
         font-weight: bold;
@@ -67,14 +65,12 @@ const AboutStyled = styled.section`
         text-align: center;
       }
       &__title-main {
-        font-size: 1.6rem;
         margin: 0;
         color: ${MainTheme.colors.mainGreen};
         font-weight: bold;
       }
       &__content {
         color: ${MainTheme.colors.mainWhite};
-        font-size: 0.9rem;
         text-align: center;
         max-width: 600px;
       }
@@ -82,7 +78,6 @@ const AboutStyled = styled.section`
         display: inline-block;
         color: ${MainTheme.colors.mainGreen};
         margin: 0;
-        font-size: 0.9rem;
       }
       &__image {
         background-color: ${MainTheme.colors.mainGreen};
@@ -104,7 +99,6 @@ const AboutStyled = styled.section`
     }
     .about {
       &__title {
-        font-size: clamp(2rem, 2vw + 1rem, 3rem);
         margin: 0;
         color: ${MainTheme.colors.mainWhite};
         font-weight: bold;
@@ -112,14 +106,12 @@ const AboutStyled = styled.section`
         text-align: left;
       }
       &__title-main {
-        font-size: clamp(2rem, 2vw + 1rem, 3rem);
         margin: 0;
         color: ${MainTheme.colors.mainGreen};
         font-weight: bold;
       }
       &__content {
         color: ${MainTheme.colors.mainWhite};
-        font-size: clamp(1.1rem, 1vw + 0.5rem, 2rem);
         text-align: left;
         max-width: fit-content;
       }
@@ -127,7 +119,6 @@ const AboutStyled = styled.section`
         display: inline-block;
         color: ${MainTheme.colors.mainGreen};
         margin: 0;
-        font-size: clamp(1.1rem, 1vw + 0.5rem, 2rem);
       }
       &__image {
         background-color: ${MainTheme.colors.mainGreen};

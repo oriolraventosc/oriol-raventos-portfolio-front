@@ -7,9 +7,9 @@ const Hero = () => {
       <HeroStyled>
         <div className="hero">
           <p>Hello.</p>
-          <span>
-            I am <h1>oriol raventós.</h1>
-          </span>
+          <h1>
+            I am <strong>oriol raventós.</strong>
+          </h1>
           <div className="hero__typed-out">
             <p className="hero__typed-erase" aria-label="front end developer">
               Front End Developer
