@@ -6,8 +6,12 @@ const HeroStyled = styled.section`
   justify-content: left;
   align-items: center;
   height: 300px;
+  padding-top: 50px;
   @media (min-width: 426px) {
     height: calc(100vh - 80px);
+  }
+  @media (min-width: 800px) {
+    padding-top: 80px;
   }
   .hero {
     display: flex;
@@ -19,7 +23,7 @@ const HeroStyled = styled.section`
     h1 {
       color: ${MainTheme.colors.mainWhite};
       font-weight: 800;
-      font-size: clamp(1.56rem, calc(1.27rem + 1.43vw), 3.55rem);
+      font-size: clamp(2.07rem, calc(1.69rem + 1.9vw), 4.54rem);
       margin: 0;
       @media (min-width: 426px) {
         font-size: clamp(2.07rem, calc(1.69rem + 1.9vw), 4.74rem);
@@ -89,7 +93,6 @@ const HeroStyled = styled.section`
     background-color: ${MainTheme.colors.mainGrey};
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
-    font-weight: lighter;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     @media (min-width: 426px) {

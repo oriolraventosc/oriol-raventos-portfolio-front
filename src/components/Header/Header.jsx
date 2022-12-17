@@ -19,7 +19,7 @@ const Header = () => {
       <section>
         <div className="header-mobile">
           <a
-            href="https://www.google.es"
+            href="#top-page"
             aria-label="oriol-raventos-portfolio-top"
             onClick={closeMenu}
           >
@@ -52,13 +52,6 @@ const Header = () => {
             className="header-mobile__navigation__item"
             onClick={closeMenu}
           >
-            technologies
-          </a>
-          <a
-            href="https://www.google.es"
-            className="header-mobile__navigation__item"
-            onClick={closeMenu}
-          >
             projects
           </a>
           <a
@@ -71,10 +64,7 @@ const Header = () => {
         </div>
       </section>
       <section className="header-desktop">
-        <a
-          href="https://www.google.es"
-          aria-label="oriol-raventos-portfolio-top"
-        >
+        <a href="#top-page" aria-label="oriol-raventos-portfolio-top">
           <span className="header-desktop__title">{"{ oriol raventós}"}</span>
         </a>
         <div
@@ -83,12 +73,6 @@ const Header = () => {
         >
           <a href="#about me" className="header-desktop__navigation__item">
             about me
-          </a>
-          <a
-            href="https://www.google.es"
-            className="header-desktop__navigation__item"
-          >
-            technologies
           </a>
           <a
             href="https://www.google.es"

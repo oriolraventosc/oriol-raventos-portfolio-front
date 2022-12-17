@@ -2,8 +2,6 @@ import styled from "styled-components";
 import MainTheme from "../../styles/ThemeStyles";
 
 const HeaderStyled = styled.header`
-  padding-top: 1.5%;
-  padding-bottom: 1%;
   .hamburger {
     position: relative;
     left: 14px;
@@ -16,6 +14,11 @@ const HeaderStyled = styled.header`
     display: none;
   }
   .header-mobile {
+    background-color: ${MainTheme.colors.mainGrey};
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    position: fixed;
+    width: calc(100vw - 2rem);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -62,10 +65,12 @@ const HeaderStyled = styled.header`
       display: none;
     }
     .header-desktop {
-      display: block;
+      background-color: ${MainTheme.colors.mainGrey};
+      padding-top: 1.5%;
+      padding-bottom: 1.5%;
       height: 80px;
-      align-items: center;
-      justify-content: center;
+      position: fixed;
+      width: calc(100vw - 8rem);
       display: flex;
       flex-direction: row;
       align-items: center;

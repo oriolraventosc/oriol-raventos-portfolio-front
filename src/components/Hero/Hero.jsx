@@ -4,7 +4,7 @@ import HeroStyled from "./HeroStyled";
 const Hero = () => {
   return (
     <>
-      <HeroStyled>
+      <HeroStyled id="top-page">
         <div className="hero">
           <p>Hello.</p>
           <h1>
