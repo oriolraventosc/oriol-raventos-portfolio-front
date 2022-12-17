@@ -41,7 +41,10 @@ const HeaderStyled = styled.header`
       align-items: center;
       transition: 0.3s;
       z-index: 0;
-      height: calc(100vh - 48px);
+      position: fixed;
+      height: 100vh;
+      width: calc(100vw - 2rem);
+      background-color: ${MainTheme.colors.mainGrey};
     }
     &-navigation {
       display: none;
@@ -97,6 +100,15 @@ const HeaderStyled = styled.header`
         }
       }
     }
+  }
+  .portfolio-menu__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    justify-content: space-between;
+    top: 5px;
+    width: calc(100vw - 2rem);
   }
 `;
 

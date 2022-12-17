@@ -40,6 +40,28 @@ const Header = () => {
           </div>
         </div>
         <div className={mainMenuButtonClassName} aria-label="portfolio-menu">
+          <div className="portfolio-menu__top">
+            <a
+              href="#top-page"
+              aria-label="oriol-raventos-portfolio-top"
+              onClick={closeMenu}
+            >
+              <span className="header-mobile__title">{"{ or }"}</span>
+            </a>
+            <div className="hamburger">
+              <Hamburger
+                toggled={isOpen}
+                rounded
+                left="40px"
+                aria-label="toggle-menu"
+                direction="left"
+                size={20}
+                color="#fff"
+                duration={0.1}
+                onToggle={() => toggleMenu()}
+              />
+            </div>
+          </div>
           <a
             href="#about me"
             className="header-mobile__navigation__item"
