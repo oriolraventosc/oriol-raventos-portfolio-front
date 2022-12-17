@@ -4,7 +4,7 @@ const Technologies = () => {
   return (
     <TechnologiesStyled>
       <h3>technologies</h3>
-      <h5 aria-label="technologies in use">USING NOW:</h5>
+      <h5>USING NOW:</h5>
       <div className="technologies__in-use__list">
         <div className="technologies__list__item">
           <img
@@ -79,12 +79,7 @@ const Technologies = () => {
           <h2>MongoDB</h2>
         </div>
       </div>
-      <h5
-        className="learning-technologies__title"
-        aria-label="new technologies learning"
-      >
-        LEARNING:
-      </h5>
+      <h5 className="learning-technologies__title">LEARNING:</h5>
       <div className="technologies__in-use__list">
         <div className="technologies__list__item">
           <img

@@ -14,7 +14,7 @@ describe("Given a Technologies component", () => {
       );
 
       const expectedTitle = screen.queryByRole("heading", {
-        level: 2,
+        level: 3,
         name: "technologies",
       });
 
@@ -29,7 +29,10 @@ describe("Given a Technologies component", () => {
         </ThemeProvider>
       );
 
-      const expectedText = screen.queryByLabelText("technologies in use");
+      const expectedText = screen.queryByRole("heading", {
+        level: 5,
+        name: "USING NOW:",
+      });
 
       expect(expectedText).toBeInTheDocument();
     });
@@ -42,7 +45,10 @@ describe("Given a Technologies component", () => {
         </ThemeProvider>
       );
 
-      const expectedText = screen.queryByLabelText("new technologies learning");
+      const expectedText = screen.queryByRole("heading", {
+        level: 5,
+        name: "LEARNING:",
+      });
 
       expect(expectedText).toBeInTheDocument();
     });
