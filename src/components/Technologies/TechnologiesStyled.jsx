@@ -2,6 +2,10 @@ import styled from "styled-components";
 import MainTheme from "../../styles/ThemeStyles";
 
 const TechnologiesStyled = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-top: 5rem;
   text-align: center;
   @media (min-width: 800px) {
@@ -12,7 +16,7 @@ const TechnologiesStyled = styled.section`
     font-size: 1.6rem;
     color: ${MainTheme.colors.mainGreen};
     font-weight: bold;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
     text-align: left;
     text-align: center;
     @media (min-width: 426px) {
@@ -20,7 +24,7 @@ const TechnologiesStyled = styled.section`
       text-align: center;
     }
     @media (min-width: 800px) {
-      font-size: 2rem;
+      font-size: clamp(2rem, 2vw + 1rem, 3rem);
       text-align: center;
     }
   }
@@ -34,7 +38,7 @@ const TechnologiesStyled = styled.section`
       text-align: center;
     }
     @media (min-width: 800px) {
-      font-size: 1.1rem;
+      font-size: clamp(1.1rem, 0.8vw + 0.5rem, 2rem);
       text-align: left;
     }
   }
@@ -59,12 +63,13 @@ const TechnologiesStyled = styled.section`
     font-size: 0.9rem;
     font-weight: lighter;
     text-align: center;
+    padding: 0;
     color: ${MainTheme.colors.mainWhite};
     @media (min-width: 426px) {
       font-size: 0.9rem;
     }
     @media (min-width: 800px) {
-      font-size: 1rem;
+      font-size: clamp(1rem, 0.8vw + 0.5rem, 2rem);
     }
   }
   .technologies__list__item {
@@ -83,8 +88,8 @@ const TechnologiesStyled = styled.section`
       width: 75px;
     }
     @media (min-width: 800px) {
-      height: 100px;
-      width: 100px;
+      height: auto;
+      width: 60%;
     }
   }
 `;

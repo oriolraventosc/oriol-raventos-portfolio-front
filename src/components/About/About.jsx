@@ -35,10 +35,7 @@ const About = () => {
           on tech meetups around Barcelona.
         </p>
       </div>
-      <img
-        src="https://oopugzqermglvumujghs.supabase.co/storage/v1/object/public/images/oriol.webp?t=2022-12-16T10%3A10%3A25.034Z"
-        alt="oriol raventós Front End Developer"
-      />
+      <div className="image-profile"></div>
     </AboutStyled>
   );
 };

@@ -18,7 +18,7 @@ const AboutStyled = styled.section`
   }
   .about {
     &__title {
-      font-size: 1.6rem;
+      font-size: clamp(1.5rem, 4vw + 1rem, 1.5rem);
       margin: 0;
       color: ${MainTheme.colors.mainWhite};
       font-weight: bold;
@@ -26,7 +26,7 @@ const AboutStyled = styled.section`
       text-align: center;
     }
     &__title-main {
-      font-size: 1.6rem;
+      font-size: clamp(1.5rem, 4vw + 1rem, 1.5rem);
       margin: 0;
       color: ${MainTheme.colors.mainGreen};
       font-weight: bold;
@@ -104,7 +104,7 @@ const AboutStyled = styled.section`
     }
     .about {
       &__title {
-        font-size: 2rem;
+        font-size: clamp(2rem, 2vw + 1rem, 3rem);
         margin: 0;
         color: ${MainTheme.colors.mainWhite};
         font-weight: bold;
@@ -112,14 +112,14 @@ const AboutStyled = styled.section`
         text-align: left;
       }
       &__title-main {
-        font-size: 2rem;
+        font-size: clamp(2rem, 2vw + 1rem, 3rem);
         margin: 0;
         color: ${MainTheme.colors.mainGreen};
         font-weight: bold;
       }
       &__content {
         color: ${MainTheme.colors.mainWhite};
-        font-size: 1.1rem;
+        font-size: clamp(1.1rem, 1vw + 0.5rem, 2rem);
         text-align: left;
         max-width: fit-content;
       }
@@ -127,7 +127,7 @@ const AboutStyled = styled.section`
         display: inline-block;
         color: ${MainTheme.colors.mainGreen};
         margin: 0;
-        font-size: 1.1rem;
+        font-size: clamp(1.1rem, 1vw + 0.5rem, 2rem);
       }
       &__image {
         background-color: ${MainTheme.colors.mainGreen};
@@ -135,6 +135,22 @@ const AboutStyled = styled.section`
         height: 400px;
         border-radius: 5px;
       }
+    }
+  }
+  .image-profile {
+    background: url(https://oopugzqermglvumujghs.supabase.co/storage/v1/object/public/images/WIN_20221217_04_28_48_Pro.jpg?t=2022-12-17T03%3A29%3A55.716Z);
+    width: 100%;
+    height: 400px;
+    border-radius: 5px;
+    background-position: center top;
+    @media (min-width: 426px) {
+      width: 60%;
+    }
+    @media (min-width: 800px) {
+      height: 500px;
+      max-width: 1000px;
+      width: 100%;
+      min-width: 300px;
     }
   }
 `;

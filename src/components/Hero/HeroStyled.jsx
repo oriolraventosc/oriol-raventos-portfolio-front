@@ -21,13 +21,13 @@ const HeroStyled = styled.section`
     span,
     h1 {
       color: ${MainTheme.colors.mainWhite};
-      font-size: 1.5rem;
+      font-size: clamp(1.5rem, 4vw + 1rem, 1.5rem);
       font-weight: 800;
       @media (min-width: 426px) {
-        font-size: 2rem;
+        font-size: clamp(2rem, 4vw + 1rem, 2.5rem);
       }
       @media (min-width: 800px) {
-        font-size: 2.5rem;
+        font-size: clamp(2.5rem, 4vw + 1rem, 4.5rem);
       }
     }
     h1 {
@@ -41,12 +41,12 @@ const HeroStyled = styled.section`
     }
     &__typed-out p {
       color: ${MainTheme.colors.mainWhite};
-      font-size: 1.5rem;
+      font-size: clamp(1.5rem, 4vw + 1rem, 1.5rem);
       @media (min-width: 426px) {
-        font-size: 2rem;
+        font-size: clamp(2rem, 4vw + 1rem, 2.5rem);
       }
       @media (min-width: 800px) {
-        font-size: 2.5rem;
+        font-size: clamp(2.5rem, 4vw + 1rem, 4.5rem);
       }
       width: 0;
       max-width: max-content;
@@ -111,7 +111,7 @@ const HeroStyled = styled.section`
       padding-right: 2.5rem;
     }
     @media (min-width: 800px) {
-      font-size: 1.2rem;
+      font-size: clamp(1.2rem, 1vw + 0.5rem, 1.5rem);
       padding-left: 2.5rem;
       padding-right: 2.5rem;
     }

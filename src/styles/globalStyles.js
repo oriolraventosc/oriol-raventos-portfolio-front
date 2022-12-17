@@ -20,7 +20,7 @@ a {
 }
 @media (min-width: 800px) {
     a {
-      font-size: 1.2rem;
+      font-size: clamp(1rem, 1vw + 0.5rem, 3.5rem);
     }
   }
 body {
@@ -32,8 +32,8 @@ body {
   padding-left: 1rem;
   }
   @media (min-width: 800px) {
-  padding-right: 3rem;
-  padding-left: 3rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
   }
 }
 ul {
