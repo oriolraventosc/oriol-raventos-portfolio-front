@@ -29,7 +29,7 @@ describe("Given a Hero component", () => {
 
       const expectedTitle = screen.queryByRole("heading", {
         level: 1,
-        name: "oriol raventós.",
+        name: "I am oriol raventós.",
       });
 
       expect(expectedTitle).toBeInTheDocument();

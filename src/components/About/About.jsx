@@ -35,7 +35,10 @@ const About = () => {
           on tech meetups around Barcelona.
         </p>
       </div>
-      <div className="image-profile"></div>
+      <div
+        className="image-profile"
+        aria-label="oriol raventós profile picture"
+      ></div>
     </AboutStyled>
   );
 };
