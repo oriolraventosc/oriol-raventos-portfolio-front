@@ -91,8 +91,8 @@ const AboutStyled = styled.section`
     margin-top: 10rem;
     flex-direction: row;
     img {
-      width: 400px;
-      height: 400px;
+      width: 100%;
+      height: auto;
     }
     .about {
       &__title {
@@ -126,7 +126,6 @@ const AboutStyled = styled.section`
     }
   }
   .image-profile {
-    background: url(https://oopugzqermglvumujghs.supabase.co/storage/v1/object/public/images/WIN_20221217_04_28_48_Pro.jpg?t=2022-12-17T03%3A29%3A55.716Z);
     width: 100%;
     height: 400px;
     border-radius: 5px;

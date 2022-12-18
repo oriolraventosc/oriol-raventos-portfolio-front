@@ -38,7 +38,12 @@ const About = () => {
       <div
         className="image-profile"
         aria-label="oriol raventós profile picture"
-      ></div>
+      >
+        <img
+          src="https://oopugzqermglvumujghs.supabase.co/storage/v1/object/public/images/oriolprofile.webp?t=2022-12-18T17%3A00%3A42.102Z"
+          alt="oriol raventós front end developer"
+        />
+      </div>
     </AboutStyled>
   );
 };
