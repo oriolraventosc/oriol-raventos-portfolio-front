@@ -96,6 +96,9 @@ const ProjectsStyled = styled.section`
     color: ${MainTheme.colors.mainGrey};
     text-align: center;
   }
+  @media (min-width: 1900px) {
+    margin-top: 25rem;
+  }
 `;
 
 export default ProjectsStyled;
