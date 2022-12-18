@@ -14,6 +14,7 @@ const HeaderStyled = styled.header`
     display: none;
   }
   .header-mobile {
+    z-index: 1;
     background-color: ${MainTheme.colors.mainGrey};
     padding-top: 1.5%;
     padding-bottom: 1.5%;
@@ -48,6 +49,7 @@ const HeaderStyled = styled.header`
       height: 100vh;
       width: calc(100vw - 2rem);
       background-color: ${MainTheme.colors.mainGrey};
+      z-index: 1;
     }
     &-navigation {
       display: none;
@@ -71,6 +73,7 @@ const HeaderStyled = styled.header`
       display: none;
     }
     .header-desktop {
+      z-index: 1;
       background-color: ${MainTheme.colors.mainGrey};
       padding-top: 1.5%;
       padding-bottom: 1.5%;
