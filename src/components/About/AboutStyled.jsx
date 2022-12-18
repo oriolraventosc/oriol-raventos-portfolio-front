@@ -126,6 +126,9 @@ const AboutStyled = styled.section`
     }
   }
   .image-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 400px;
     border-radius: 5px;
@@ -139,6 +142,9 @@ const AboutStyled = styled.section`
       width: 100%;
       min-width: 300px;
     }
+  }
+  @media (min-width: 1900px) {
+    margin-top: 25rem;
   }
 `;
 
