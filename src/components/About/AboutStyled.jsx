@@ -130,7 +130,6 @@ const AboutStyled = styled.section`
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 400px;
     border-radius: 5px;
     background-position: center top;
     @media (min-width: 426px) {
