@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import useProject from "../../utils/fetchBase";
 import About from "../About/About";
 import Header from "../Header/Header";
