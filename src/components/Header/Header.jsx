@@ -4,6 +4,7 @@ import { useState } from "react";
 
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
+  const [navBar, setNavbar] = useState(false);
   const toggleMenu = () => {
     setOpen(!isOpen);
   };
@@ -14,10 +15,21 @@ const Header = () => {
   const mainMenuButtonClassName = isOpen
     ? "header-mobile-navigation--show"
     : "header-mobile-navigation";
+
+  const changeNavbarColor = () => {
+    if (window.scrollY) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+      //navBar ? {navBar ? "header-desktop active" : "header-desktop"}
+    }
+  };
+
+  window.addEventListener("scroll", changeNavbarColor);
   return (
     <HeaderStyled>
       <section>
-        <div className="header-mobile">
+        <div className={navBar ? "header-mobile active" : "header-mobile"}>
           <a
             href="#top-page"
             aria-label="oriol-raventos-portfolio-top"
@@ -28,12 +40,11 @@ const Header = () => {
           <div className="hamburger">
             <Hamburger
               toggled={isOpen}
-              rounded
               left="40px"
               aria-label="toggle-menu"
               direction="left"
               size={20}
-              color="#fff"
+              color={navBar ? "#1F1F20" : "#fff"}
               duration={0.1}
               onToggle={() => toggleMenu()}
             />
@@ -51,7 +62,6 @@ const Header = () => {
             <div className="hamburger">
               <Hamburger
                 toggled={isOpen}
-                rounded
                 left="40px"
                 aria-label="toggle-menu"
                 direction="left"
@@ -85,26 +95,41 @@ const Header = () => {
           </a>
         </div>
       </section>
-      <section className="header-desktop">
+      <section className={navBar ? "header-desktop active" : "header-desktop"}>
         <a href="#top-page" aria-label="oriol-raventos-portfolio-top">
-          <span className="header-desktop__title">{"{ oriol raventós}"}</span>
+          <span className="header-desktop__title">{"{ oriol raventós }"}</span>
         </a>
         <div
           className="header-desktop__navigation"
           aria-label="portfolio-desktop-menu"
         >
-          <a href="#about me" className="header-desktop__navigation__item">
+          <a
+            href="#about me"
+            className={
+              navBar
+                ? "header-desktop__navigation__item active-menu-anchor"
+                : "header-desktop__navigation__item"
+            }
+          >
             about me
           </a>
           <a
             href="https://www.google.es"
-            className="header-desktop__navigation__item"
+            className={
+              navBar
+                ? "header-desktop__navigation__item active-menu-anchor"
+                : "header-desktop__navigation__item"
+            }
           >
             projects
           </a>
           <a
             href="https://www.google.es"
-            className="header-desktop__navigation__item"
+            className={
+              navBar
+                ? "header-desktop__navigation__item active-menu-anchor"
+                : "header-desktop__navigation__item"
+            }
           >
             contact
           </a>

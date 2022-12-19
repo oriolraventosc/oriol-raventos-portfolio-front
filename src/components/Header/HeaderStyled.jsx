@@ -4,7 +4,7 @@ import MainTheme from "../../styles/ThemeStyles";
 const HeaderStyled = styled.header`
   .hamburger {
     position: relative;
-    left: 14px;
+    padding-right: 0.114rem;
   }
   .header-desktop {
     display: none;
@@ -20,7 +20,8 @@ const HeaderStyled = styled.header`
     padding-top: 1.5%;
     padding-bottom: 1.5%;
     position: fixed;
-    width: calc(100vw - 2rem);
+    width: 100vw;
+    left: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -28,6 +29,7 @@ const HeaderStyled = styled.header`
     &__title {
       color: ${MainTheme.colors.mainGreen};
       font-weight: bold;
+      padding-left: 1rem;
     }
     &__navigation__item {
       padding-bottom: 2rem;
@@ -75,6 +77,8 @@ const HeaderStyled = styled.header`
     }
     .header-desktop {
       top: 0;
+      width: 100%;
+      left: 0;
       padding-right: 5px;
       padding-left: 5px;
       z-index: 1;
@@ -83,7 +87,6 @@ const HeaderStyled = styled.header`
       padding-bottom: 1.5%;
       height: 80px;
       position: fixed;
-      width: calc(100vw - 8rem);
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -91,10 +94,9 @@ const HeaderStyled = styled.header`
       &__title {
         color: ${MainTheme.colors.mainGreen};
         font-weight: bold;
+        padding-left: 3.7rem;
       }
       &__title:hover {
-        color: ${MainTheme.colors.mainWhite};
-        transition: 0.3s;
         cursor: pointer;
       }
       &__navigation {
@@ -103,6 +105,7 @@ const HeaderStyled = styled.header`
         justify-content: center;
         align-items: center;
         gap: 2rem;
+        padding-right: 4.3rem;
         &__item:hover {
           color: ${MainTheme.colors.mainGreen};
           transition: 0.3s;
@@ -118,10 +121,17 @@ const HeaderStyled = styled.header`
     position: absolute;
     justify-content: space-between;
     top: 5px;
-    width: calc(100vw - 2rem);
+    width: 100vw;
     padding-top: 1.5%;
     top: 0;
-    padding-bottom: 1.5%;
+    padding-bottom: 1rem;
+    background-color: ${MainTheme.colors.mainGrey};
+  }
+  .active {
+    background-color: ${MainTheme.colors.mainWhite};
+  }
+  .active-menu-anchor {
+    color: ${MainTheme.colors.mainGrey};
   }
 `;
 
