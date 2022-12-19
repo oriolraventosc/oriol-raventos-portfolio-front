@@ -3,6 +3,7 @@ import MainTheme from "../../styles/ThemeStyles";
 
 const LoaderStyled = styled.section`
   z-index: 8;
+  top: 0;
   width: calc(100vw - 2rem);
   height: 100vh;
   display: flex;
@@ -10,7 +11,7 @@ const LoaderStyled = styled.section`
   align-items: center;
   position: fixed;
   @media (min-width: 800px) {
-    width: calc(100vw - 8rem);
+    width: calc(100vw - 6rem);
   }
   background-color: ${MainTheme.colors.mainGrey};
   .loader {
