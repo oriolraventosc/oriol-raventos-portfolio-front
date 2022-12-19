@@ -21,7 +21,6 @@ const Header = () => {
       setNavbar(true);
     } else {
       setNavbar(false);
-      //navBar ? {navBar ? "header-desktop active" : "header-desktop"}
     }
   };
 
