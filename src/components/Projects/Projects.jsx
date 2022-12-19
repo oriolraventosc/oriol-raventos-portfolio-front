@@ -10,7 +10,6 @@ const Projects = () => {
     loadAllProjects();
   }, [loadAllProjects]);
   const results = result.data;
-  console.log(loading);
   return (
     <>
       {loading === true && <Loader />}
