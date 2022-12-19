@@ -4,15 +4,13 @@ import MainTheme from "../../styles/ThemeStyles";
 const LoaderStyled = styled.section`
   z-index: 8;
   top: 0;
-  width: calc(100vw - 2rem);
+  width: 100%;
+  left: 0;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
-  @media (min-width: 800px) {
-    width: calc(100vw - 6rem);
-  }
   background-color: ${MainTheme.colors.mainGrey};
   .loader {
     color: rgb(172, 229, 10);
