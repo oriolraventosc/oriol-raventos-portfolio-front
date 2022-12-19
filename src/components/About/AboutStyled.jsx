@@ -137,9 +137,9 @@ const AboutStyled = styled.section`
     }
     @media (min-width: 800px) {
       height: 500px;
-      max-width: 1000px;
       width: 100%;
       min-width: 300px;
+      max-width: 800px;
     }
   }
   @media (min-width: 1900px) {
