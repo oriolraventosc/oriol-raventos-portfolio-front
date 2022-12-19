@@ -14,6 +14,7 @@ const HeaderStyled = styled.header`
     display: none;
   }
   .header-mobile {
+    top: 0;
     z-index: 1;
     background-color: ${MainTheme.colors.mainGrey};
     padding-top: 1.5%;
@@ -73,6 +74,9 @@ const HeaderStyled = styled.header`
       display: none;
     }
     .header-desktop {
+      top: 0;
+      padding-right: 5px;
+      padding-left: 5px;
       z-index: 1;
       background-color: ${MainTheme.colors.mainGrey};
       padding-top: 1.5%;

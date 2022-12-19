@@ -43,12 +43,13 @@ const ProjectsStyled = styled.section`
     visibility: hidden;
     opacity: 0;
     text-align: center;
-    padding-top: 42%;
+    padding-top: 38%;
     margin: 0;
     color: black;
     transition: opacity 0.2s, visibility 0.2s;
     @media (min-width: 800px) {
       bottom: 0px;
+      padding-top: 42%;
     }
   }
   .hover-underline-animation {
