@@ -30,7 +30,7 @@ const ContactForm = () => {
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    const formDataToSubmit = {
+    let formDataToSubmit = {
       name: initialForm.name,
       email: initialForm.email,
       telephone: initialForm.telephone,
@@ -38,7 +38,7 @@ const ContactForm = () => {
     };
 
     if (
-      formDataToSubmit.name === "" ||
+      formDataToSubmit.name.value === "" ||
       formDataToSubmit.email === "" ||
       formDataToSubmit.message === ""
     ) {
@@ -46,11 +46,15 @@ const ContactForm = () => {
     } else {
       addContact(formDataToSubmit);
       setAlert({ ...alert, error: false });
-      console.log(initialForm);
+      event.target.reset();
+      initialForm.name = "";
+      initialForm.email = "";
+      initialForm.telephone = "";
+      initialForm.message = "";
     }
   };
   return (
-    <ContactFormStyled>
+    <ContactFormStyled id="contact">
       <h3>
         contact <strong>me</strong>
       </h3>
