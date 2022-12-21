@@ -22,6 +22,8 @@ const FooterStyled = styled.section`
   .icon:hover {
     color: ${MainTheme.colors.mainGreen};
     cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.3s;
   }
 `;
 
