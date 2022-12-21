@@ -38,7 +38,7 @@ const ContactForm = () => {
     };
 
     if (
-      formDataToSubmit.name.value === "" ||
+      formDataToSubmit.name === "" ||
       formDataToSubmit.email === "" ||
       formDataToSubmit.message === ""
     ) {
@@ -49,7 +49,7 @@ const ContactForm = () => {
       event.target.reset();
       initialForm.name = "";
       initialForm.email = "";
-      initialForm.telephone = "";
+      initialForm.telephone = 34;
       initialForm.message = "";
     }
   };
