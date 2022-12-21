@@ -10,7 +10,7 @@ const ContactFormStyled = styled.section`
   @media (min-width: 800px) {
     margin-top: 10rem;
   }
-  h3 {
+  h2 {
     color: ${MainTheme.colors.mainWhite};
     padding-bottom: 1.5rem;
     margin: 0;

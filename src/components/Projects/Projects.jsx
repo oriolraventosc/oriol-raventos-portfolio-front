@@ -14,7 +14,7 @@ const Projects = () => {
     <>
       {loading === true && <Loader />}
       <ProjectsStyled id="projects">
-        <h3>projects</h3>
+        <h2>projects</h2>
         <div className="projects__list">
           {results.map((project) =>
             project.map((projects, index) => (
