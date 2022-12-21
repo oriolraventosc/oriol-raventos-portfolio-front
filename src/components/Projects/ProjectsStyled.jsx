@@ -11,7 +11,8 @@ const ProjectsStyled = styled.section`
     height: 100%;
     border-radius: 5px;
   }
-  h3 {
+  h3,
+  h2 {
     text-align: center;
     color: ${MainTheme.colors.mainGreen};
     margin: 0;

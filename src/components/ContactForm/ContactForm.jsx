@@ -55,9 +55,9 @@ const ContactForm = () => {
   };
   return (
     <ContactFormStyled id="contact">
-      <h3>
+      <h2>
         contact <strong>me</strong>
-      </h3>
+      </h2>
       <form onSubmit={onSubmit}>
         <div>
           <input

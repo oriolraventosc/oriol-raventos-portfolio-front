@@ -31,7 +31,10 @@ h1 {
   font-size: var(--step-5);
 }
 h2 {
-  font-size: var(--step-4);
+  font-size: var(--step-2);
+  @media (min-width: 800px) {
+  font-size: var(--step-2);
+  }
 }
 h3 {
   font-size: var(--step-2);

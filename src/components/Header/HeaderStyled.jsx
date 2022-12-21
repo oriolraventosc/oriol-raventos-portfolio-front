@@ -65,6 +65,8 @@ const HeaderStyled = styled.header`
       transition: 0.3s;
       z-index: 0;
       height: calc(100vh - 48px);
+      width: 100%;
+      left: 0;
     }
   }
   @media (min-width: 800px) {

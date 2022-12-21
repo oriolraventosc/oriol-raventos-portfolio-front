@@ -4,9 +4,9 @@ const About = () => {
   return (
     <AboutStyled id="about me">
       <div className="about">
-        <h3 className="about__title">
+        <h2 className="about__title">
           about <strong className="about__title-main">me</strong>
-        </h3>
+        </h2>
         <p
           className="about__content"
           aria-label="introduction about oriol raventós"
