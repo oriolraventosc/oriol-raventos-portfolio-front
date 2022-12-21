@@ -83,8 +83,8 @@ const HeaderStyled = styled.header`
       padding-left: 5px;
       z-index: 1;
       background-color: ${MainTheme.colors.mainGrey};
-      padding-top: 1.5%;
-      padding-bottom: 1.5%;
+      padding-top: 1%;
+      padding-bottom: 1%;
       height: 80px;
       position: fixed;
       display: flex;
