@@ -79,14 +79,14 @@ const Header = () => {
             about me
           </a>
           <a
-            href="https://www.google.es"
+            href="#projects"
             className="header-mobile__navigation__item"
             onClick={closeMenu}
           >
             projects
           </a>
           <a
-            href="https://www.google.es"
+            href="#contact"
             className="header-mobile__navigation__item"
             onClick={closeMenu}
           >
@@ -113,7 +113,7 @@ const Header = () => {
             about me
           </a>
           <a
-            href="https://www.google.es"
+            href="#projects"
             className={
               navBar
                 ? "header-desktop__navigation__item active-menu-anchor"
@@ -123,7 +123,7 @@ const Header = () => {
             projects
           </a>
           <a
-            href="https://www.google.es"
+            href="#contact"
             className={
               navBar
                 ? "header-desktop__navigation__item active-menu-anchor"

@@ -13,7 +13,7 @@ const Projects = () => {
   return (
     <>
       {loading === true && <Loader />}
-      <ProjectsStyled>
+      <ProjectsStyled id="projects">
         <h3>projects</h3>
         <div className="projects__list">
           {results.map((project) =>
