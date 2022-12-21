@@ -50,7 +50,8 @@ const HeaderStyled = styled.header`
       z-index: 0;
       position: fixed;
       height: 100vh;
-      width: calc(100vw - 2rem);
+      width: 100%;
+      left: 0;
       background-color: ${MainTheme.colors.mainGrey};
       z-index: 1;
     }
