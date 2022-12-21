@@ -2,12 +2,13 @@ import React from "react";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import useContact from "../../utils/FormFetch/baseFetch";
+import ContactFormStyled from "./ContactFormStyled";
 
 const ContactForm = () => {
   const [alert, setAlert] = useState({
     error: false,
     message:
-      "Try submiting the form again with the needed information (name, email, message)",
+      "Try submiting the form again with the needed information (name, email and message)",
   });
   const intialFormData = {
     name: "",
@@ -49,7 +50,7 @@ const ContactForm = () => {
     }
   };
   return (
-    <>
+    <ContactFormStyled>
       <h3>
         contact <strong>me</strong>
       </h3>
@@ -107,9 +108,13 @@ const ContactForm = () => {
           ></textarea>
         </div>
         <button type="submit">SUBMIT</button>
-        {error === true && <p>{alert.message}</p>}
+        {error === true && (
+          <div className="alert">
+            <p>{alert.message}</p>
+          </div>
+        )}
       </form>
-    </>
+    </ContactFormStyled>
   );
 };
 

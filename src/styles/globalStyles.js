@@ -55,10 +55,69 @@ p {
     font-size: var(--step-0);
   }
 }
+input {
+  text-align: center;
+  font-size: var(--step-1);
+  width: 15rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  color: ${MainTheme.colors.mainGrey};
+  margin-bottom: 1rem;
+  @media (min-width: 426px) {
+        padding-left: 1rem;
+  padding-right: 1rem;
+      padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: var(--step-0);
+  width: 20rem;
+  @media (min-width: 800px) {
+    width: 30rem;
+  }
+        @media (min-width: 2000px) {
+    width: 35rem;
+  }
+  }
+}
+input:focus {
+  border: 2px solid ${MainTheme.colors.mainGreen};
+  outline: none !important;
+}
+textarea:focus {
+  border: 2px solid ${MainTheme.colors.mainGreen};
+  outline: none !important;
+}
+textarea {
+  width: 15rem;
+  text-align: center;
+  border: none;
+  margin-bottom: 1rem;
+  color: ${MainTheme.colors.mainGrey};
+  border-radius: 5px;
+  font-size: var(--step-1);
+  font-family: "Roboto";
+    padding-top: 1rem;
+  padding-bottom: 1rem;
+  @media (min-width: 426px) {
+            padding-left: 1rem;
+  padding-right: 1rem;
+    padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: var(--step-0);
+  width: 20rem;
+    @media (min-width: 800px) {
+    width: 30rem;
+  }
+      @media (min-width: 2000px) {
+    width: 35rem;
+  }
+  }
+}
 span {
   font-size: var(--step-2);
   @media (min-width: 426px) {
-    font-size: var(--step-2);
+  font-size: var(--step-2);
   }
   @media (min-width: 800px) {
     font-size: var(--step-2);
