@@ -36,7 +36,7 @@ const Header = () => {
           >
             <span className="header-mobile__title">{"{ or }"}</span>
           </a>
-          <div className="hamburger">
+          <div className="hamburger" aria-label="hamburger-menu">
             <Hamburger
               toggled={isOpen}
               left="40px"
@@ -58,7 +58,7 @@ const Header = () => {
             >
               <span className="header-mobile__title">{"{ or }"}</span>
             </a>
-            <div className="hamburger">
+            <div className="hamburger" aria-label="hamburger-menu">
               <Hamburger
                 toggled={isOpen}
                 left="40px"

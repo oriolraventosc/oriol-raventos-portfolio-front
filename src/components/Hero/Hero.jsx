@@ -21,7 +21,7 @@ const Hero = () => {
         </div>
       </HeroStyled>
       <div className="next-button">
-        <a href="#about me">
+        <a href="#about me" aria-label="next button">
           <ExpandCircleDownIcon
             className="next-button-icon"
             sx={{
