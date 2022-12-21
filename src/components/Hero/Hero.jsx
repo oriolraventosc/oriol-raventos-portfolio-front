@@ -15,7 +15,9 @@ const Hero = () => {
               Front End Developer
             </p>
           </div>
-          <button>Let's get in touch</button>
+          <a href="#contact">
+            <button>Let's get in touch</button>
+          </a>
         </div>
       </HeroStyled>
       <div className="next-button">

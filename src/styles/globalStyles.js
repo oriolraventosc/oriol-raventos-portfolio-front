@@ -180,6 +180,7 @@ li {
 }
 .next-button-icon:hover {
   color: #fff;
+  transform: scale(1.1);
   cursor: pointer;
   transition: 0.3s;
 }

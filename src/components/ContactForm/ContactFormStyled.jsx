@@ -39,7 +39,7 @@ const ContactFormStyled = styled.section`
     }
   }
   button:hover {
-    background-color: ${MainTheme.colors.mainWhite};
+    box-shadow: inset 300px 0 0 0 #fff;
     border-color: ${MainTheme.colors.mainWhite};
     color: ${MainTheme.colors.mainGrey};
     cursor: pointer;
