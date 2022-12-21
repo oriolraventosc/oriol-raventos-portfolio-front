@@ -78,7 +78,12 @@ const ContactFormStyled = styled.section`
     }
     p {
       margin: 0;
-      font-size: clamp(0.66rem, calc(0.54rem + 0.6vw), 1.5rem);
+      padding-right: 5px;
+      padding-left: 5px;
+      font-size: clamp(0.88rem, calc(0.71rem + 0.8vw), 2rem);
+      @media (min-width: 426px) {
+        font-size: clamp(0.66rem, calc(0.54rem + 0.6vw), 1.5rem);
+      }
     }
   }
 `;
