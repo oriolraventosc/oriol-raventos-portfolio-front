@@ -3,7 +3,7 @@ import LoaderStyled from "./LoaderStyled";
 const Loader = () => {
   return (
     <LoaderStyled>
-      <span className="loader"></span>
+      <span className="loader" aria-label="loader"></span>
     </LoaderStyled>
   );
 };

@@ -28,7 +28,10 @@ const Header = () => {
   return (
     <HeaderStyled>
       <section>
-        <div className={navBar ? "header-mobile active" : "header-mobile"}>
+        <div
+          className={navBar ? "header-mobile active" : "header-mobile"}
+          aria-label="main-menu"
+        >
           <a
             href="#top-page"
             aria-label="oriol-raventos-portfolio-top"
@@ -58,11 +61,12 @@ const Header = () => {
             >
               <span className="header-mobile__title">{"{ or }"}</span>
             </a>
-            <div className="hamburger" aria-label="hamburger-menu">
+            <div className="hamburger" aria-label="hamburger-menu-close">
               <Hamburger
                 toggled={isOpen}
                 left="40px"
-                aria-label="toggle-menu"
+                aria-label="toggle-menu-close"
+                label="toggle-menu-close"
                 direction="left"
                 size={20}
                 color="#fff"

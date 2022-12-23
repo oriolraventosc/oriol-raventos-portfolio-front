@@ -9,7 +9,7 @@ import CallIcon from "@mui/icons-material/Call";
 const Footer = () => {
   return (
     <FooterStyled>
-      <p>
+      <p aria-label="created by oriol raventós">
         created by <strong>oriol raventós</strong>
       </p>
       <div className="footer-icons">

@@ -69,16 +69,16 @@ input {
   color: ${MainTheme.colors.mainGrey};
   margin-bottom: 1rem;
   @media (min-width: 426px) {
-        padding-left: 1rem;
-  padding-right: 1rem;
-      padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-size: var(--step-0);
-  width: 20rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: var(--step-0);
+    width: 20rem;
   @media (min-width: 800px) {
     width: 30rem;
   }
-        @media (min-width: 2000px) {
+    @media (min-width: 2000px) {
     width: 35rem;
   }
   }
@@ -100,19 +100,19 @@ textarea {
   border-radius: 5px;
   font-size: var(--step-1);
   font-family: "Roboto";
-    padding-top: 1rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
   @media (min-width: 426px) {
-            padding-left: 1rem;
-  padding-right: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-size: var(--step-0);
-  width: 20rem;
-    @media (min-width: 800px) {
+    padding-bottom: 1rem;
+    font-size: var(--step-0);
+    width: 20rem;
+  @media (min-width: 800px) {
     width: 30rem;
   }
-      @media (min-width: 2000px) {
+  @media (min-width: 2000px) {
     width: 35rem;
   }
   }
@@ -120,7 +120,7 @@ textarea {
 span {
   font-size: var(--step-2);
   @media (min-width: 426px) {
-  font-size: var(--step-2);
+    font-size: var(--step-2);
   }
   @media (min-width: 800px) {
     font-size: var(--step-2);
@@ -139,7 +139,7 @@ body {
   font-family: "Roboto";
 }
 html {
-background-color: #1F1F20;
+  background-color: #1F1F20;
 }
 a {
   text-decoration: none;
@@ -159,12 +159,12 @@ body {
   padding-right: 1rem;
   padding-left: 1rem;
   @media (min-width: 426px) {
-  padding-right: 1rem;
-  padding-left: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
   @media (min-width: 800px) {
-  padding-right: 4rem;
-  padding-left: 4rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
   }
 }
 ul {

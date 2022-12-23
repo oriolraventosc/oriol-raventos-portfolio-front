@@ -15,7 +15,7 @@ const Projects = () => {
       {loading === true && <Loader />}
       <ProjectsStyled id="projects">
         <h2>projects</h2>
-        <div className="projects__list">
+        <div className="projects__list" aria-label="projects list">
           {results.map((project) =>
             project.map((projects, index) => (
               <div className="img__wrap" key={index}>
