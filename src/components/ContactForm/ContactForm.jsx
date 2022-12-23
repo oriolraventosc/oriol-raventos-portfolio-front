@@ -70,6 +70,7 @@ const ContactForm = () => {
             autoComplete="off"
             placeholder="name"
             onChange={handleFormChange}
+            aria-label="name"
           />
         </div>
         <div>
@@ -83,6 +84,7 @@ const ContactForm = () => {
             autoComplete="off"
             placeholder="e-mail"
             onChange={handleFormChange}
+            aria-label="email"
           />
           {watchValues && watchValues["email"] === "" ? (
             <span>Remember to type your email</span>
@@ -99,6 +101,7 @@ const ContactForm = () => {
             autoComplete="off"
             placeholder="telephone"
             onChange={handleFormChange}
+            aria-label="telephone"
           />
         </div>
         <div>
@@ -109,6 +112,7 @@ const ContactForm = () => {
             autoComplete="off"
             placeholder="message"
             onChange={handleFormChange}
+            aria-label="message"
           ></textarea>
         </div>
         <button type="submit">SUBMIT</button>
