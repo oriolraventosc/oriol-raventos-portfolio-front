@@ -82,7 +82,7 @@ const Footer = () => {
           />
         </a>
         <a
-          href="tel: 664622830"
+          href="tel: 629337162"
           alt="oriol raventós telephone number"
           aria-label="oriol raventós telephone number"
         >
