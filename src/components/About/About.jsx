@@ -1,4 +1,5 @@
 import AboutStyled from "./AboutStyled";
+import foto from "./oriol.jpg";
 
 const About = () => {
   return (
@@ -39,10 +40,7 @@ const About = () => {
         className="image-profile"
         aria-label="oriol raventós profile picture"
       >
-        <img
-          src="https://oopugzqermglvumujghs.supabase.co/storage/v1/object/public/images/oriolprofile.webp?t=2022-12-18T17%3A00%3A42.102Z"
-          alt="oriol raventós front end developer"
-        />
+        <img src={foto} alt="oriol raventós front end developer" />
       </div>
     </AboutStyled>
   );
