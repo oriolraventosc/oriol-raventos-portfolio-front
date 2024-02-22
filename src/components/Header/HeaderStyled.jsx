@@ -15,7 +15,7 @@ const HeaderStyled = styled.header`
   }
   .header-mobile {
     top: 0;
-    z-index: 1;
+    z-index: 2;
     background-color: ${MainTheme.colors.mainGrey};
     padding-top: 1.5%;
     padding-bottom: 1.5%;
@@ -70,7 +70,12 @@ const HeaderStyled = styled.header`
       left: 0;
     }
   }
-  @media (min-width: 800px) {
+  @media (min-width: 768px) {
+    .header-mobile-navigation--show {
+      margin-top: -1.6rem;
+    }
+  }
+  @media (min-width: 1024px) {
     .header-mobile-navigation--show {
       display: none;
     }

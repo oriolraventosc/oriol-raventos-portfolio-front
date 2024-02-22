@@ -1,20 +1,18 @@
-import About from "../About/About";
-import ContactForm from "../ContactForm/ContactForm";
-import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
-import Hero from "../Hero/Hero";
-import Projects from "../Projects/Projects";
+import { Routes, Route, Navigate } from "react-router-dom";
+import Homepage from "../../pages/Homepage/Homepage";
+import Blogpage from "../../pages/Blogpage/Blogpage";
+import ArticlePage from "../../pages/ArticlePage/ArticlePage";
 
 const App = () => {
   return (
     <>
       <div className="App">
-        <Header />
-        <Hero />
-        <About />
-        <Projects />
-        <ContactForm />
-        <Footer />
+        <Routes>
+          <Route path="/home" element={<Homepage />} />
+          <Route path="/" element={<Navigate to={"/home"} />} />
+          <Route path="/blog" element={<Blogpage />} />
+          <Route path="/article/:id" element={<ArticlePage />} />
+        </Routes>
       </div>
     </>
   );

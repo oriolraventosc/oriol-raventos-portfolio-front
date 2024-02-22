@@ -33,7 +33,7 @@ const Header = () => {
           aria-label="main-menu"
         >
           <a
-            href="#top-page"
+            href="/home"
             aria-label="oriol-raventos-portfolio-top"
             onClick={closeMenu}
           >
@@ -53,53 +53,38 @@ const Header = () => {
           </div>
         </div>
         <div className={mainMenuButtonClassName} aria-label="portfolio-menu">
-          <div className="portfolio-menu__top">
-            <a
-              href="#top-page"
-              aria-label="oriol-raventos-portfolio-top"
-              onClick={closeMenu}
-            >
-              <span className="header-mobile__title">{"{ or }"}</span>
-            </a>
-            <div className="hamburger" aria-label="hamburger-menu-close">
-              <Hamburger
-                toggled={isOpen}
-                left="40px"
-                aria-label="toggle-menu-close"
-                label="toggle-menu-close"
-                direction="left"
-                size={20}
-                color="#fff"
-                duration={0.1}
-                onToggle={() => toggleMenu()}
-              />
-            </div>
-          </div>
           <a
-            href="#about me"
+            href="/home"
             className="header-mobile__navigation__item"
             onClick={closeMenu}
           >
             about me
           </a>
           <a
-            href="#projects"
+            href="/home"
             className="header-mobile__navigation__item"
             onClick={closeMenu}
           >
             projects
           </a>
           <a
-            href="#contact"
+            href="/home"
             className="header-mobile__navigation__item"
             onClick={closeMenu}
           >
             contact
           </a>
+          <a
+            href="/blog"
+            className="header-mobile__navigation__item"
+            onClick={closeMenu}
+          >
+            blog
+          </a>
         </div>
       </section>
       <section className={navBar ? "header-desktop active" : "header-desktop"}>
-        <a href="#top-page" aria-label="oriol-raventos-portfolio-top">
+        <a href="/home" aria-label="oriol-raventos-portfolio-top">
           <span className="header-desktop__title">{"{ oriol raventós }"}</span>
         </a>
         <div
@@ -107,7 +92,7 @@ const Header = () => {
           aria-label="portfolio-desktop-menu"
         >
           <a
-            href="#about me"
+            href="/home"
             className={
               navBar
                 ? "header-desktop__navigation__item active-menu-anchor"
@@ -117,7 +102,7 @@ const Header = () => {
             about me
           </a>
           <a
-            href="#projects"
+            href="/home"
             className={
               navBar
                 ? "header-desktop__navigation__item active-menu-anchor"
@@ -127,7 +112,7 @@ const Header = () => {
             projects
           </a>
           <a
-            href="#contact"
+            href="/home"
             className={
               navBar
                 ? "header-desktop__navigation__item active-menu-anchor"
@@ -135,6 +120,16 @@ const Header = () => {
             }
           >
             contact
+          </a>
+          <a
+            href="/blog"
+            className={
+              navBar
+                ? "header-desktop__navigation__item active-menu-anchor"
+                : "header-desktop__navigation__item"
+            }
+          >
+            blog
           </a>
         </div>
       </section>

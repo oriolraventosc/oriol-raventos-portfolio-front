@@ -12,9 +12,18 @@ const AboutStyled = styled.section`
     margin: 0;
   }
   img {
-    width: 250px;
-    height: 250px;
+    width: 100%;
     border-radius: 5px;
+  }
+  .image-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 300px;
+    max-width: 500px;
+    border-radius: 5px;
+    background-position: center top;
   }
   .about {
     &__title {
@@ -48,11 +57,7 @@ const AboutStyled = styled.section`
   }
   @media (min-width: 426px) {
     margin-top: 5rem;
-    img {
-      width: 350px;
-      height: 350px;
-      border-radius: 5px;
-    }
+
     .about {
       &__title {
         margin: 0;
@@ -83,6 +88,15 @@ const AboutStyled = styled.section`
         border-radius: 5px;
       }
     }
+    .image-profile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      min-width: 300px;
+      border-radius: 5px;
+      background-position: center top;
+    }
   }
   @media (min-width: 800px) {
     p {
@@ -90,10 +104,8 @@ const AboutStyled = styled.section`
     }
     margin-top: 10rem;
     flex-direction: row;
-    img {
-      width: 100%;
-      height: auto;
-    }
+    gap: 4rem;
+
     .about {
       &__title {
         margin: 0;
@@ -117,33 +129,24 @@ const AboutStyled = styled.section`
         color: ${MainTheme.colors.mainGreen};
         margin: 0;
       }
-      &__image {
+      &__image-profile {
         background-color: ${MainTheme.colors.mainGreen};
-        width: 300px;
+        width: 100%;
+        min-width: 350px;
         height: 400px;
         border-radius: 5px;
+        object-fit: cover;
       }
     }
-  }
-  .image-profile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    border-radius: 5px;
-    background-position: center top;
-    @media (min-width: 426px) {
-      width: 60%;
-    }
-    @media (min-width: 800px) {
-      height: 500px;
+    .image-profile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 100%;
-      min-width: 300px;
-      max-width: 800px;
+      min-width: 400px;
+      border-radius: 5px;
+      background-position: center top;
     }
-  }
-  @media (min-width: 1900px) {
-    margin-top: 25rem;
   }
 `;
 
