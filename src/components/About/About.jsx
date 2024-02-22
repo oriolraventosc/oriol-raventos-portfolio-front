@@ -12,28 +12,20 @@ const About = () => {
           className="about__content"
           aria-label="introduction about oriol raventós"
         >
-          My name is oriol raventós and I'm a{" "}
-          <strong className="about__content-main">
-            Junior Front End Developer
-          </strong>{" "}
-          based in <strong className="about__content-main">Barcelona</strong>. I
-          describe myself as a passionate developer who loves{" "}
-          <strong className="about__content-main">coding</strong>, creating new
-          content for the internet and facing new challenges.
-        </p>{" "}
-        <br />
-        <p
-          className="about__content"
-          aria-label="past proffesional experiences"
-        >
-          Not so long ago I used to work as a{" "}
-          <strong className="about__content-main">SEO Technician</strong>, but
-          now I work with code.
-        </p>
-        <br />{" "}
-        <p className="about__content" aria-label="free time activities">
-          Aside from my job, I like to enjoy my free time climbing, running or
-          on tech meetups around Barcelona.
+          Hi, I'm Oriol Raventós, a <strong> Front End Developer </strong>
+          based in Barcelona. Coding is my passion, and I love creating engaging
+          web experiences. I enjoy tackling new challenges and turning ideas
+          into innovative digital content.
+          <br></br>
+          <br></br>
+          I'm dedicated to staying updated with the latest technologies,
+          exploring different frameworks and techniques. Outside coding, I find
+          joy in climbing and attending tech meetups across Barcelona. These
+          experiences fuel my problem-solving skills and creativity.
+          <br></br>
+          <br></br>
+          Driven by curiosity and a desire for growth, I aim to push boundaries
+          and craft impactful solutions in web development.
         </p>
       </div>
       <div
