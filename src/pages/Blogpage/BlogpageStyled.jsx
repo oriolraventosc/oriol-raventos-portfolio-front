@@ -172,7 +172,7 @@ const BlogpageStyled = styled.section`
       }
       &__articles {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
       }
       &__article__title {
         color: ${MainTheme.colors.mainWhite};
