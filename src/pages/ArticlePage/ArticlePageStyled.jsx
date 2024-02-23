@@ -20,6 +20,8 @@ const ArticlePageStyled = styled.section`
   }
   .article__content--title {
     max-width: 600px;
+    font-size: 2.5rem;
+    margin-bottom: 0;
   }
   .article__content--main {
     max-width: 600px;
@@ -36,6 +38,13 @@ const ArticlePageStyled = styled.section`
     }
     p {
       margin-bottom: 0;
+      font-size: 1.25rem;
+    }
+    h2 {
+      font-size: 1.75rem;
+    }
+    h3 {
+      font-size: 1.45rem;
     }
   }
   ol {
@@ -63,9 +72,6 @@ const ArticlePageStyled = styled.section`
   @media (min-width: 768px) {
   }
   @media (min-width: 1024px) {
-    h3 {
-      font-size: 1.8rem;
-    }
     img {
       max-width: 100%;
       height: 100%;
