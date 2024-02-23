@@ -20,6 +20,8 @@ const ArticlePageStyled = styled.section`
   }
   .article__content--title {
     max-width: 600px;
+    font-size: 2.5rem;
+    margin-bottom: 0;
   }
   .article__content--main {
     max-width: 600px;
@@ -36,6 +38,13 @@ const ArticlePageStyled = styled.section`
     }
     p {
       margin-bottom: 0;
+      font-size: 1.25rem;
+    }
+    h2 {
+      font-size: 1.75rem;
+    }
+    h3 {
+      font-size: 1.45rem;
     }
   }
   ol {
@@ -63,20 +72,23 @@ const ArticlePageStyled = styled.section`
   @media (min-width: 768px) {
   }
   @media (min-width: 1024px) {
-    h3 {
-      font-size: 1.8rem;
-    }
     img {
       max-width: 100%;
       height: 100%;
       max-height: 550px;
     }
+    .article__main-image {
+      padding-right: 10rem;
+      padding-left: 10rem;
+    }
     .article__content {
       display: block;
+      padding-right: 10rem;
+      padding-left: 10rem;
       &--title {
         max-width: 100%;
         width: 100%;
-        font-size: 2.7rem;
+        font-size: 2.5rem;
       }
     }
     .content-box {
@@ -87,22 +99,71 @@ const ArticlePageStyled = styled.section`
         max-width: 100%;
         width: 100%;
       }
+      p {
+        font-size: 1.25rem;
+      }
+      h2 {
+        font-size: 1.75rem;
+      }
+      h3 {
+        font-size: 1.45rem;
+      }
     }
   }
-  @media (min-width: 1049px) {
+  @media (min-width: 1300px) {
+    .article__main-image {
+      padding-right: 12rem;
+      padding-left: 12rem;
+    }
+    .article__content {
+      padding-right: 12rem;
+      padding-left: 12rem;
+    }
+  }
+  @media (min-width: 1440px) {
+    .article__main-image {
+      padding-right: 15rem;
+      padding-left: 15rem;
+    }
+    .article__content {
+      padding-right: 15rem;
+      padding-left: 15rem;
+    }
+  }
+
+  @media (min-width: 1600px) {
+    .article__main-image {
+      padding-right: 17rem;
+      padding-left: 17rem;
+    }
+    .article__content {
+      padding-right: 17rem;
+      padding-left: 17rem;
+    }
+  }
+
+  @media (min-width: 1700px) {
+    .article__main-image {
+      padding-right: 18rem;
+      padding-left: 18rem;
+    }
+    .article__content {
+      padding-right: 18rem;
+      padding-left: 18rem;
+    }
   }
 
   @media (min-width: 1900px) {
-    .article__content {
-      padding-right: 5rem;
-      padding-left: 5rem;
-    }
     .article__main-image {
-      padding-right: 5rem;
-      padding-left: 5rem;
+      padding-right: 20rem;
+      padding-left: 20rem;
+    }
+    .article__content {
+      padding-right: 20rem;
+      padding-left: 20rem;
     }
     img {
-      max-height: 800px;
+      max-height: 600px;
     }
   }
 `;

@@ -22,12 +22,12 @@ const ArticlePage = () => {
           <img src={article.mainImage} alt={article.title}></img>
         </div>
         <div className="article__content">
-          <h2
+          <h1
             className="article__content--title"
             style={{ color: "#fff", fontWeight: "bold" }}
           >
             {article.title}
-          </h2>
+          </h1>
           {parse(article.content)}
         </div>
       </ArticlePageStyled>
